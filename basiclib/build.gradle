@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdk
+    buildToolsVersion rootProject.ext.buildTools
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdk
+        targetSdkVersion rootProject.ext.targetSdk
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:${rootProject.ext.support}"
+    testCompile 'junit:junit:4.12'
+    // rx 事件通知框架 http://gank.io/post/560e15be2dca930e00da1083
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    // 网络通信框架 http://blog.csdn.net/carson_ho/article/details/73732076
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    // 加HttpLoggingInterceptor进行调试
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0' // rxjava retrofit 集成 http://blog.csdn.net/yrmao9893/article/details/69791519
+    // dagger注解框架 http://blog.csdn.net/u012943767/article/details/51897247
+    compile 'com.google.dagger:dagger:2.11'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
+    // 数据库框架 https://www.cnblogs.com/whoislcj/p/5651396.html
+    compile 'org.greenrobot:greendao:3.2.2'
+    // 图片加载框架 http://blog.csdn.net/guolin_blog/article/details/53939176/
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //UI跳转 框架
+    compile project(":componentlib")
+}
