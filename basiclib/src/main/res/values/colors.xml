@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/main_color</color>
+    <color name="colorPrimaryDark">@color/main_color</color>
+    <color name="colorAccent">@color/main_color</color>
+    <color name="red">#FF3333</color>
+    <color name="pink">#FF6666</color>
+    <color name="green">#2DC0B8</color>
+    <color name="greenbg">#22908A</color>
+    <color name="blue">#3398DB</color>
+    <color name="line">#E8E8E8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <color name="lightblack">#565656</color>
+    <color name="title">#5A7899</color>
+    <color name="garybg">#F2F2F2</color>
+    <color name="gary">#AEAEAE</color>
+    <color name="color_blue">#2595e3</color>
+    <color name="translucent_background">#80000000</color>
+
+
+
+    <color name="color_light_blue">#00DDB6</color>
+    <color name="txt_color">#48495F</color>
+    <color name="item_bg">#FFFFFF</color>
+    <color name="bg">#F0F0F0</color>
+    <color name="spinner_bg">#333244</color>
+    <color name="new_text_color">#555771</color>
+    <color name="white_text_color">#F0F0F0</color>
+    <color name="gray_color">#4b4b58</color>
+    <color name="hard_color">#48495f</color>
+    <color name="clickspan_color">#00ddb6</color>
+    <color name="dull_blue">#3B4BBF</color>
+
+
+    <color name="bg_line">#E7E7E7</color>
+    <color name="bg_color">#FF99DCD7</color>
+
+    <color name="cell_background_color">#ffffff</color>
+    <color name="cell_text_color">#1f1f1f</color>
+    <color name="header_line_color">@android:color/holo_red_light</color>
+
+
+    <!-- Material Design TableView Colors -->
+    <color name="md_cell_text_color">#1f1f1f</color>
+    <color name="md_column_header_text_color">#696969</color>
+    <color name="md_highlight_row_background_color">#EEEEEE</color>
+    <color name="md_selected_background_color">#F5F5F5</color>
+    <color name="md_cell_line_color">#dbdbdb</color>
+
+    <!-- Overriding the default values of the tableView -->
+    <!-- <color name="cell_line_color">#dbdbdb</color> -->
+    <!-- <color name="table_view_selected_background_color">@color/md_selected_background_color</color> -->
+    <color name="default_background_color">@color/cell_background_color</color>
+    <color name="common_pressed">#20000000</color>  <!--白色背景按下去的颜色-->
+
+
+    <!--主体颜色-->
+    <color name="main_color">#2083E8</color>
+    <!--首页颜色-->
+    <color name="first_card_item_bg">#F4F8FB</color>
+    <color name="first_card_item_fbg">#2083E8</color>
+    <color name="first_card_tv">#2083E8</color>
+    <color name="first_card_tv2">#333333</color>
+    <color name="first_red">#EF4641</color>
+    <color name="first_buld">#2083E8</color>
+
+    <color name="admin_main_tl_bg">#EEEFF3</color>
+    <color name="admin_main_unselect_text">#6C6C6C</color>
+    <color name="admin_main_select_text">#333333</color>
+    <color name="main_text_color">#6D6E76</color>
+    <!-- 公共分割线-->
+    <color name="stroke_checked_color">#FF4081</color>
+    <color name="stroke_unchecked_color">#e3e3e3</color>
+    <color name="flowlayout_checked_color">#57609e</color>
+    <color name="flowlayout_unchecked_color">#f2f5f9</color>
+    <color name="flowlayout_unenable_color">#999999</color>
+
+    <color name="flowlayout_checked_tv_color">#8d8ea3</color>
+
+
+
+
+</resources>

@@ -14,9 +14,11 @@
             <option value="$PROJECT_DIR$/build-gradle" />
             <option value="$PROJECT_DIR$/componentlib" />
             <option value="$PROJECT_DIR$/componentservice" />
+            <option value="$PROJECT_DIR$/login" />
             <option value="$PROJECT_DIR$/readercomponent" />
             <option value="$PROJECT_DIR$/router-anno-compiler" />
             <option value="$PROJECT_DIR$/router-annotation" />
+            <option value="$PROJECT_DIR$/sharecomponent" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

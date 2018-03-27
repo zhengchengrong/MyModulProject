@@ -52,6 +52,14 @@ public class ReaderFragment extends Fragment {
                     goToShareActivityForResult();
                 }
             });
+            rootView.findViewById(R.id.tv_4).setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    goToLoginActivityWithBundle();
+                }
+            });
+
 
         }
         return rootView;
@@ -86,5 +94,7 @@ public class ReaderFragment extends Fragment {
                 "DDComp://share/shareBook?bookName=Gone with the Wind&author="
                         + JsonService.Factory.getInstance().create().toJsonString(author), null, REQUEST_CODE);
     }
-
+    private void goToLoginActivityWithBundle() {
+        UIRouter.getInstance().openUri(getActivity(), "DDComp://login/loginPage", null);
+    }
 }

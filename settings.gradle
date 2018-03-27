@@ -1,1 +1,1 @@
-include ':app', ':basicres', ':basiclib', ':build-gradle', ':router-annotation', ':componentlib', ':componentservice', ':readercomponent', ':router-anno-compiler'
+include ':app', ':basicres', ':basiclib', ':build-gradle', ':router-annotation', ':componentlib', ':componentservice', ':readercomponent', ':router-anno-compiler', ':login', ':sharecomponent'

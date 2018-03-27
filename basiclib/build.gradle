@@ -45,6 +45,15 @@ dependencies {
     compile 'org.greenrobot:greendao:3.2.2'
     // 图片加载框架 http://blog.csdn.net/guolin_blog/article/details/53939176/
     compile 'com.github.bumptech.glide:glide:3.7.0'
+    // 选项卡框架 https://github.com/H07000223/FlycoTabLayout
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    // 下拉刷新，上拉加载框架 https://github.com/scwang90/SmartRefreshLayout
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    // 加载进度条框架
+    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+    // 注解框架
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     //UI跳转 框架
     compile project(":componentlib")
 }

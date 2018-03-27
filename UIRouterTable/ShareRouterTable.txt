@@ -1,0 +1,9 @@
+auto generated, do not change !!!! 
+
+HOST : share
+
+∑÷œÌ ÈºÆ“≥√Ê
+/shareBook
+author:com.luojilab.componentservice.share.bean.Author
+bookName:String
+

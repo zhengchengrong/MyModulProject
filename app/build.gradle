@@ -3,7 +3,6 @@ apply plugin: 'com.dd.comgradle'
 android {
     compileSdkVersion rootProject.ext.compileSdk
     defaultConfig {
-        applicationId "com.zcr.mymodulproject"
         minSdkVersion rootProject.ext.minSdk
         targetSdkVersion rootProject.ext.targetSdk
         versionCode rootProject.ext.versionCode

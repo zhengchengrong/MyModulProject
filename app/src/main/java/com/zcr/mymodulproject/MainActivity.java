@@ -22,15 +22,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button installReadBookBtn;
     Button uninstallReadBtn;
-
+    Button installLoginBtn;
+    Button uninstallLoginBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         installReadBookBtn = findViewById(R.id.install_share);
         uninstallReadBtn = findViewById(R.id.uninstall_share);
+
+        installLoginBtn = findViewById(R.id.install_login);
+        uninstallLoginBtn = findViewById(R.id.uninstall_login);
+
         installReadBookBtn.setOnClickListener(this);
         uninstallReadBtn.setOnClickListener(this);
+
+        installLoginBtn.setOnClickListener(this);
+        uninstallLoginBtn.setOnClickListener(this);
+
         showFragment();
     }
 
@@ -59,6 +68,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.uninstall_share:
                 Router.unregisterComponent("com.luojilab.share.applike.ShareApplike");
                 Router.unregisterComponent("com.luojilab.share.kotlin.applike.KotlinApplike");
+                break;
+            case R.id.install_login:
+                Router.registerComponent("com.zcr.login.applike.LoginAppLike");
+                break;
+            case R.id.uninstall_login:
+                Router.unregisterComponent("com.zcr.login.applike.LoginAppLike");
                 break;
         }
     }
